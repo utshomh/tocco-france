@@ -2,6 +2,7 @@ import { Metadata } from "next";
 
 import Slider from "./_components/hero/slider";
 import { Welcome } from "./_components/hero";
+import { Services } from "./_components/services";
 
 export const metadata: Metadata = {
   title: "Home - Tocco France",
@@ -12,6 +13,7 @@ export default function Home() {
     <div className="min-h-[200vh]">
       <Slider />
       <Welcome />
+      <Services />
     </div>
   );
 }

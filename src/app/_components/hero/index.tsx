@@ -6,7 +6,7 @@ import WelcomeSlider from "../welcome/slider";
 
 export function Welcome() {
   return (
-    <div className="min-h-screen w-full px-12 grid grid-cols-5 gap-12">
+    <div className="min-h-screen w-full max-w-7xl mx-auto px-12 grid grid-cols-5 gap-12">
       <div className="space-y-4 my-auto col-span-3">
         <motion.h2
           className="font-script text-5xl"
