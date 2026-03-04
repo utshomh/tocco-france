@@ -48,7 +48,7 @@ const serviceData: Array<ServiceItemProp> = [
 
 export function Services() {
   return (
-    <ul className="min-h-screen w-full max-w-7xl mx-auto px-12 grid grid-cols-3 gap-6">
+    <ul className="min-h-[80vh] w-full max-w-7xl mx-auto px-12 grid grid-cols-3 gap-6">
       {serviceData.map((service, i) => (
         <li key={i}>
           <ServiceItem

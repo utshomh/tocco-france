@@ -18,8 +18,8 @@ export default function WelcomeSlider() {
   return (
     <div className="space-y-8">
       <motion.div
-        initial={{ opacity: 0, y: -35, x: 35 }}
-        whileInView={{ opacity: 1, y: 0, x: 0 }}
+        initial={{ scale: 0.7, y: -35, x: 35 }}
+        whileInView={{ scale: 1, y: 0, x: 0 }}
         transition={{ duration: 0.5 }}
       >
         <Swiper
@@ -63,8 +63,8 @@ export default function WelcomeSlider() {
       </motion.div>
 
       <motion.p
-        initial={{ opacity: 0, y: 50, x: -50 }}
-        whileInView={{ opacity: 1, y: 0, x: 0 }}
+        initial={{ scale: 0.7, y: 50, x: -50 }}
+        whileInView={{ scale: 1, y: 0, x: 0 }}
         transition={{ duration: 0.5 }}
       >
         Indulge in a world of opulence and sophistication at Tocco France, where

@@ -10,8 +10,8 @@ export function Welcome() {
       <div className="space-y-4 my-auto col-span-3">
         <motion.h2
           className="font-script text-5xl"
-          initial={{ opacity: 0, y: -75 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ scaleX: 0.75, y: -75 }}
+          whileInView={{ scaleX: 1, y: 0 }}
           transition={{ duration: 0.75 }}
         >
           Welcome to Tocco France
