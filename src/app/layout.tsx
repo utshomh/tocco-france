@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Dancing_Script, Montserrat } from "next/font/google";
+import { Dancing_Script, Montserrat, Open_Sans } from "next/font/google";
 
 import "@/styles/globals.css";
 import Navbar from "@/components/ui/navbar/navbar";
@@ -12,6 +12,10 @@ const dancingScript = Dancing_Script({
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-sans",
+});
+
+const openSans = Open_Sans({
+  variable: "--font-open-sans",
 });
 
 export const metadata: Metadata = {
@@ -30,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`dark ${dancingScript.variable} ${montserrat.variable} antialiased`}
+        className={`dark ${dancingScript.variable} ${montserrat.variable} ${openSans.variable} antialiased`}
       >
         <Navbar />
 
