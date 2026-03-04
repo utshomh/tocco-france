@@ -5,12 +5,10 @@ import "@/styles/globals.css";
 import Navbar from "@/app/_components/navbar/navbar";
 
 const dancingScript = Dancing_Script({
-  subsets: ["latin"],
-  variable: "--font-dancing",
+  variable: "--font-script",
 });
 
 const montserrat = Montserrat({
-  subsets: ["latin"],
   variable: "--font-sans",
 });
 

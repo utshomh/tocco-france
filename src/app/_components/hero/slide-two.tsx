@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import slideOne from "@/assets/slide-one.webp";
+import slideOne from "./assets/slide-one.webp";
 
 export function SlideTwo({ isActive }: { isActive: boolean }) {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-black">
+    <div className="relative top-0 left-0 min-h-screen w-full overflow-hidden bg-black">
       <motion.div
         initial={false}
         animate={{
