@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dancingScript.variable} ${montserrat.variable} antialiased font-sans bg-background text-text`}
+        className={`dark ${dancingScript.variable} ${montserrat.variable} antialiased`}
       >
         <Navbar />
 
