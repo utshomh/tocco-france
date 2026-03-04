@@ -18,7 +18,7 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Tocco France",
+    template: "%s - Tocco France",
     default: "Tocco France",
   },
   description: "Luxury Switch and Socket",

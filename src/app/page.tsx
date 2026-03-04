@@ -4,7 +4,7 @@ import Slider from "./_components/hero/slider";
 import { Welcome } from "./_components/hero";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Home - Tocco France",
 };
 
 export default function Home() {

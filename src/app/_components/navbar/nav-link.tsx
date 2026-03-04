@@ -17,7 +17,7 @@ export function NavLink({ href, children }: NavLinkProp) {
       href={href}
       className={clsx(
         "text-base font-semibold uppercase hover:text-gray-400 transition-colors duration-300",
-        href === pathname ? "text-primary" : "text-white",
+        href === pathname ? "text-gray-300" : "text-white",
       )}
     >
       {children}
