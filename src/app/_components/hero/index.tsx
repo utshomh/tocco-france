@@ -16,7 +16,7 @@ export function Welcome() {
         >
           Welcome to Tocco France
         </motion.h2>
-        <h1 className="text-8xl font-semibold text-primary">
+        <h1 className="text-8xl font-semibold bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent">
           Redefining Luxury Switches & Sockets
         </h1>
       </div>

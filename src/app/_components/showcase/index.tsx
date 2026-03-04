@@ -46,7 +46,7 @@ export function Showcase() {
               className="h-full w-full object-cover rounded-2xl"
             />
           </motion.div>
-          <h2 className="text-yellow-400 text-5xl font-semibold leading-tight w-1/3">
+          <h2 className="text-secondary text-5xl font-semibold leading-tight w-1/3">
             A Thinner <br /> Switch <br /> Than You Think.
           </h2>
         </motion.div>

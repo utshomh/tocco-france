@@ -57,7 +57,7 @@ export function Demo() {
 
             <motion.button
               className="
-              text-yellow-600
+              text-secondary
               text-3xl
               font-medium 
               flex items-center gap-2
