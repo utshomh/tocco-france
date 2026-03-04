@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-sans: var(--font-montserrat);
+  --font-script: var(--font-dancing-script);
+
+  /* Backgrounds */
+  --color-navbar: #212121;
+
+  --color-background: #000000;
+  --color-background-2: #101010;
+  --color-background-3: #191919;
+  --color-background-4: #0d0d0d;
+
+  /* Overlay */
+  --color-overlay: #103d4f;
+
+  /* Text */
+  --color-text: #faf5f0;
+
+  /* Brand */
+  --color-primary: #fcf790;
+  --color-secondary: #a6812d;
+  --color-tertiary: #002654;
+}
