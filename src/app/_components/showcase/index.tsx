@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
-import verticalSwitch from "./assets/thin-glass.avif";
+import verticalSwitch from "./assets/vertical-socket.avif";
 import glass from "./assets/rich-glass.avif";
-import drill from "./assets/rich-glass.avif";
+import drill from "./assets/thin-glass.avif";
 import child from "./assets/rich-colors.avif";
 
 const containerVariants = {
@@ -43,7 +43,7 @@ export function Showcase() {
             <Image
               src={verticalSwitch}
               alt="Vertical Switch"
-              className="h-full w-full object-cover rounded-2xl rounded-b-none"
+              className="h-full w-full object-cover rounded-2xl"
             />
           </motion.div>
           <h2 className="text-yellow-400 text-5xl font-semibold leading-tight w-1/3">
@@ -65,7 +65,7 @@ export function Showcase() {
           whileHover={{ y: -8 }}
           className="rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 p-6 pb-0 overflow-hidden"
         >
-          <h3 className="text-3xl font-bold pb-6 max-w-72">
+          <h3 className="text-3xl font-bold pb-6 max-w-80">
             Scratch Proof Tempered Glass Panel
           </h3>
 
@@ -73,7 +73,7 @@ export function Showcase() {
             <Image
               src={glass}
               alt="Glass Panel"
-              className="w-full object-contain rounded-2xl"
+              className="w-full max-h-72 object-cover rounded-2xl rounded-b-none"
             />
           </motion.div>
         </motion.div>
@@ -90,9 +90,9 @@ export function Showcase() {
           }}
           transition={{ duration: 0.5 }}
           whileHover={{ y: -8 }}
-          className="rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 p-6 overflow-hidden"
+          className="rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 p-6 pb-0 overflow-hidden"
         >
-          <h3 className="text-3xl font-bold mb-6 max-w-72">
+          <h3 className="text-3xl font-bold mb-6 max-w-80">
             Friction Resistance & Scratch Proof
           </h3>
 
@@ -100,7 +100,7 @@ export function Showcase() {
             <Image
               src={drill}
               alt="Drill Test"
-              className="w-full object-contain rounded-2xl"
+              className="w-full max-h-72 object-cover rounded-2xl rounded-b-none"
             />
           </motion.div>
         </motion.div>
@@ -119,7 +119,7 @@ export function Showcase() {
           whileHover={{ y: -8 }}
           className="rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 p-6"
         >
-          <h3 className="text-3xl font-bold mb-6 max-w-72">
+          <h3 className="text-3xl font-bold mb-6 max-w-80">
             Child Protection Design
           </h3>
 
@@ -145,7 +145,7 @@ export function Showcase() {
           transition={{ duration: 0.5 }}
           className="col-span-2 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 p-6"
         >
-          <h3 className="text-3xl font-bold mb-6 max-w-72">
+          <h3 className="text-3xl font-bold mb-6 max-w-80">
             Rich Selection of Colors
           </h3>
 
