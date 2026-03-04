@@ -1,15 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { BsCartX } from "react-icons/bs";
 import { PiX } from "react-icons/pi";
+import { LuUser } from "react-icons/lu";
 import {
   Drawer,
   DrawerClose,
   DrawerContent,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import { LuUser } from "react-icons/lu";
 
 export function Account() {
   return (

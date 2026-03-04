@@ -4,9 +4,9 @@ import clsx from "clsx";
 import { useEffect, useState } from "react";
 
 import { NAVBAR_SCROLL_HEIGHT } from "@/utils/consts";
-import { Logo } from "./logo";
+import { Logo } from "@/components/ui/logo";
 import { NavList } from "./nav-list";
-import { ActionList } from "./action-list";
+import { ActionList } from "./actions/action-list";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

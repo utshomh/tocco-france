@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { PiX } from "react-icons/pi";
 import {
   Drawer,

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Dancing_Script, Montserrat, Open_Sans } from "next/font/google";
 
 import "@/styles/globals.css";
-import Navbar from "@/components/ui/navbar/navbar";
+import Navbar from "@/app/_components/navbar/navbar";
 
 const dancingScript = Dancing_Script({
   subsets: ["latin"],
