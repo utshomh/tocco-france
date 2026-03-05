@@ -4,7 +4,7 @@ import { Search } from "./search";
 
 export function ActionList() {
   return (
-    <ul className="flex items-center gap-4">
+    <ul className="hidden md:flex items-center gap-4">
       <Account />
       <Search />
       <Cart />

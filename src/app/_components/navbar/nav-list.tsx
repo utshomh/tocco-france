@@ -1,6 +1,6 @@
 import { NavLink, NavLinkProp } from "./nav-link";
 
-const navLinks: Array<NavLinkProp> = [
+export const navLinks: Array<NavLinkProp> = [
   { href: "/", children: "Home" },
   { href: "#", children: "Company" },
   { href: "/switch-socket", children: "Switch & Socket" },
@@ -11,7 +11,7 @@ const navLinks: Array<NavLinkProp> = [
 
 export function NavList() {
   return (
-    <ul className="flex items-center gap-4">
+    <ul className="hidden md:flex items-center gap-4">
       {navLinks.map((link, i) => (
         <li key={i}>
           <NavLink href={link.href}>{link.children}</NavLink>
