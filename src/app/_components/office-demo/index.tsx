@@ -10,8 +10,8 @@ import officeDesk from "./assets/Office-Desk.jpg";
 export function OfficeDemo() {
   return (
     <div className="relative w-full">
-      <div className="relative w-full py-24">
-        <div className="absolute inset-0 -z-20">
+      <div className="relative min-h-[90vh] w-full py-24">
+        <div className="absolute inset-0 h-full -z-20">
           <Image
             src={officeDesk}
             alt="Office Desk"
@@ -21,9 +21,9 @@ export function OfficeDemo() {
           />
         </div>
 
-        <div className="absolute inset-0 bg-linear-to-b from-black via-black/70 to-black -z-10" />
+        <div className="absolute h-full inset-0 bg-linear-to-b from-black via-black/75 to-black/97 -z-10" />
 
-        <div className="relative z-10 flex flex-col justify-center items-center gap-6 text-center">
+        <div className="relative z-10 min-h-[90vh] flex flex-col justify-center items-center gap-6 text-center">
           <motion.h2
             className="text-5xl font-bold"
             initial={{ y: 50, scale: 0.9 }}
@@ -44,8 +44,8 @@ export function OfficeDemo() {
             whileInView={{ y: 0, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            Tocco France's premium switches & sockets, <br /> combining style
-            and functionality for a marvelous environment.
+            Tocco France&apos;s premium switches & sockets, <br /> combining
+            style and functionality for a marvelous environment.
           </motion.p>
 
           <OfficeDemoSlider />

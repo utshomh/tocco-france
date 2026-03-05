@@ -7,7 +7,7 @@ import interior from "./assets/interior.png";
 
 export function HouseDemo() {
   return (
-    <div className="min-h-screen w-full max-w-7xl mx-auto flex items-center justify-center gap-12">
+    <div className="py-32 w-full max-w-360 mx-auto flex items-center justify-center gap-12">
       <motion.div
         className="w-1/2"
         initial={{
