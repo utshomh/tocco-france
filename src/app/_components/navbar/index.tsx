@@ -32,7 +32,7 @@ export function Navbar() {
           "fixed top-0 left-0 w-full z-50 flex items-center justify-between transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
           scrolled
             ? "py-2 px-4 bg-navbar bg-opacity-80 backdrop-filter backdrop-blur-md shadow-md"
-            : "py-6 px-8 bg-transparent",
+            : "py-8 px-8 bg-transparent",
         )}
       >
         <div className="w-full flex items-center justify-between">
