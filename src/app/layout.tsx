@@ -32,10 +32,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`dark ${dancingScript.variable} ${montserrat.variable} ${openSans.variable} antialiased`}
+        className={`dark ${dancingScript.variable} ${montserrat.variable} ${openSans.variable} antialiased overflow-x-hidden`}
       >
         <Navbar />
-
         {children}
       </body>
     </html>

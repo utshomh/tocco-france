@@ -7,6 +7,7 @@ import { Demo } from "./_components/demo";
 import { Showcase } from "./_components/showcase";
 import { HouseDemo } from "./_components/house-demo";
 import { OfficeDemo } from "./_components/office-demo";
+import { Certified } from "./_components/certified";
 
 export const metadata: Metadata = {
   title: "Home - Tocco France",
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="min-h-[200vh]">
+    <div>
       <Slider />
       <Welcome />
       <Services />
@@ -22,6 +23,7 @@ export default function Home() {
       <Showcase />
       <OfficeDemo />
       <HouseDemo />
+      <Certified />
     </div>
   );
 }
