@@ -1,4 +1,6 @@
-import { Logo } from "@/components/ui/logo";
+"use client";
+
+import { motion } from "framer-motion";
 import {
   FaFacebookF,
   FaInstagram,
@@ -7,11 +9,19 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
+import { Logo } from "@/components/ui/logo";
+
 export function Footer() {
   return (
     <footer className="w-full bg-background-4">
-      <div className="max-w-7xl mx-auto px-6 py-16 space-y-6">
-        <Logo />
+      <div className="max-w-7xl mx-auto px-6 py-14 space-y-6">
+        <motion.div
+          initial={{ opacity: 0.5, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Logo />
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           <div className="space-y-6">
