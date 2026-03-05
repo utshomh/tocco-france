@@ -66,7 +66,7 @@ export function Demo() {
               cursor-pointer
             "
               initial={{
-                scale: 0.75,
+                scale: 0.9,
                 y: 25,
               }}
               whileInView={{

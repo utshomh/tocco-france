@@ -13,8 +13,8 @@ export function ServiceItem({ title, subtitle, image }: ServiceItemProp) {
   return (
     <motion.div
       className="flex flex-col items-center gap-3"
-      initial={{ scaleX: 0.75, y: 25 }}
-      whileInView={{ scaleX: 1, y: 0 }}
+      initial={{ scale: 0.75, y: 25 }}
+      whileInView={{ scale: 1, y: 0 }}
       transition={{ duration: 0.35 }}
     >
       <Image src={image} alt={title} />

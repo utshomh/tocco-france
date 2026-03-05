@@ -3,10 +3,10 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import verticalSwitch from "./assets/vertical-socket.avif";
-import glass from "./assets/rich-glass.avif";
-import drill from "./assets/thin-glass.avif";
-import child from "./assets/rich-colors.avif";
+import verticalSwitch from "./assets/product-features-01.png";
+import glass from "./assets/product-features-03.png";
+import drill from "./assets/product-features-02.png";
+import child from "./assets/product-features-04.png";
 
 const containerVariants = {
   hidden: {},
@@ -19,7 +19,7 @@ const containerVariants = {
 
 export function Showcase() {
   return (
-    <section className="bg-black text-white py-24 px-6">
+    <section className="bg-black text-white py-24 max-w-5xl w-full mx-auto">
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -37,17 +37,15 @@ export function Showcase() {
             y: 0,
           }}
           transition={{ duration: 0.5 }}
-          className="row-span-2 col-span-2 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 p-6 pb-0 flex justify-between items-center gap-6 relative"
+          className="row-span-2 col-span-2 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 flex justify-between items-center gap-6 relative"
         >
-          <motion.div className="w-2/3 flex justify-center">
-            <Image
-              src={verticalSwitch}
-              alt="Vertical Switch"
-              className="h-full w-full object-cover rounded-2xl"
-            />
-          </motion.div>
-          <h2 className="text-secondary text-5xl font-semibold leading-tight w-1/3">
-            A Thinner <br /> Switch <br /> Than You Think.
+          <Image
+            src={verticalSwitch}
+            alt="Feature"
+            className="absolute inset-0 h-full w-full object-cover rounded-2xl"
+          />
+          <h2 className="text-[#fffa93] text-5xl font-bold leading-tight z-10 ml-auto mr-5">
+            A Thinner <br /> Switch <br /> Than You <br /> Think.
           </h2>
         </motion.div>
 
@@ -149,14 +147,14 @@ export function Showcase() {
             Rich Selection of Colors
           </h3>
 
-          <div className="flex gap-4">
+          <div className="flex h-full gap-6">
             {["#f5f5f5", "#c0c0c0", "#c7a14a", "#000000"].map((color, i) => (
-              <motion.button
+              <motion.div
                 key={i}
                 style={{ backgroundColor: color }}
-                whileHover={{ scale: 1.15 }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full h-48 rounded-xl border border-white/20"
+                className="w-full h-[calc(100%-92px)] rounded-xl border border-white/20"
               />
             ))}
           </div>
