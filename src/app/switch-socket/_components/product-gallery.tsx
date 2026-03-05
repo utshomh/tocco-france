@@ -51,7 +51,7 @@ export function ProductGallery() {
   return (
     <div className="min-h-screen bg-[#111111] text-gray-300 p-8 font-sans">
       {/* TOP BAR */}
-      <div className="flex justify-between items-center mb-10 text-sm tracking-wider">
+      <div className="hidden lg:flex justify-between items-center gap-2 mb-10 text-sm tracking-wider">
         <div className="flex items-center gap-2">
           <span className="hover:text-white cursor-pointer">Home</span>
           <span>/</span>
@@ -119,8 +119,8 @@ export function ProductGallery() {
 
       {/* PRODUCT GRID */}
       <div
-        className={`grid gap-x-6 gap-y-10
-          ${
+        className={`grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10
+          lg:${
             viewMode === "grid3"
               ? "grid-cols-3"
               : viewMode === "grid2"

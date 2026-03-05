@@ -9,10 +9,18 @@ export const metadata: Metadata = {
 
 export default function SwitchSocketPage() {
   return (
-    <div className="bg-background-2">
-      <div className="mx-auto w-full max-w-7xl min-h-[calc(100vh-112px)] grid grid-cols-7 p-6 mt-28 gap-6">
-        <Sidebar />
-        <div className="col-span-5">
+    <div className="bg-background-2 overflow-x-hidden mt-28 p-4 lg:p-6">
+      <div className="flex lg:hidden items-center justify-center gap-2 pb-4 border-b border-gray-60">
+        <span className="hover:text-white cursor-pointer">Home</span>
+        <span>/</span>
+        <span className="hover:text-white cursor-pointer">Switch & Socket</span>
+      </div>
+
+      <div className="mx-auto w-full max-w-7xl min-h-[calc(100vh-112px)] grid grid-cols-1 lg:grid-cols-7 gap-6">
+        <div className="col-span-1 lg:col-span-2">
+          <Sidebar />
+        </div>
+        <div className="col-span-1 lg:col-span-5">
           <ProductGallery />
         </div>
       </div>

@@ -1,11 +1,14 @@
+import { LuMenu } from "react-icons/lu";
+
+import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import { Slider } from "@/components/ui/slider";
 
 export function Sidebar() {
   const minPrice = 300;
   const maxPrice = 1650;
 
-  return (
-    <div className="space-y-6 col-span-2">
+  const barContent = (
+    <div className="space-y-6 p-6 lg:p-0">
       <h2 className="uppercase font-bold text-lg">Filter by Price</h2>
       <Slider
         defaultValue={[0, 100]}
@@ -37,5 +40,23 @@ export function Sidebar() {
         </span>
       </div>
     </div>
+  );
+
+  return (
+    <>
+      <div className="hidden lg:block">{barContent}</div>
+
+      <div className="block lg:hidden">
+        <Drawer direction="left">
+          <DrawerTrigger asChild>
+            <button className="lg:hidden p-2 rounded text-white hover:text-gray-300 flex items-center gap-2">
+              <LuMenu className="text-2xl" /> Show Sidebar
+            </button>
+          </DrawerTrigger>
+
+          <DrawerContent>{barContent}</DrawerContent>
+        </Drawer>
+      </div>
+    </>
   );
 }
