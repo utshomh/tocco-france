@@ -11,7 +11,7 @@ export const navLinks: Array<NavLinkProp> = [
 
 export function NavList() {
   return (
-    <ul className="hidden md:flex items-center gap-4">
+    <ul className="hidden lg:flex items-center gap-4">
       {navLinks.map((link, i) => (
         <li key={i}>
           <NavLink href={link.href}>{link.children}</NavLink>

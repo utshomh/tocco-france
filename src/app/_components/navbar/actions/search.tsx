@@ -17,7 +17,7 @@ export function Search() {
           <div className="flex flex-col h-full gap-8 pb-8">
             <input
               type="text"
-              className="w-full border-none outline-0 p-3 text-center text-5xl border-b border-gray-700"
+              className="w-full border-none outline-0 p-3 text-center text-2xl lg:text-5xl border-b border-gray-700"
               autoFocus
               placeholder="Search for Product"
             />

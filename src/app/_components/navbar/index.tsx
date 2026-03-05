@@ -12,6 +12,7 @@ import { Drawer, DrawerTrigger, DrawerContent } from "@/components/ui/drawer";
 import { LuMenu } from "react-icons/lu";
 import { NavLink } from "./nav-link";
 import { MobileActions } from "./mobile-actions";
+import { Cart } from "./actions/cart";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -36,19 +37,22 @@ export function Navbar() {
         )}
       >
         <div className="w-full flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <Logo className={clsx(scrolled ? "scale-75" : "scale-100")} />
-          </div>
+          <Logo
+            className={clsx(
+              scrolled ? "scale-75" : "scale-100",
+              "hidden lg:block",
+            )}
+          />
 
           <NavList />
 
-          <div className="flex items-center gap-4">
-            <ActionList />
+          <ActionList />
 
+          <div className="w-full flex lg:hidden items-center justify-between gap-4">
             {/* hamburger for small screens */}
             <Drawer direction="left">
               <DrawerTrigger asChild>
-                <button className="md:hidden p-2 rounded text-white hover:text-gray-300">
+                <button className="lg:hidden p-2 rounded text-white hover:text-gray-300">
                   <LuMenu className="text-2xl" />
                 </button>
               </DrawerTrigger>
@@ -70,6 +74,10 @@ export function Navbar() {
                 </motion.div>
               </DrawerContent>
             </Drawer>
+
+            <Logo className={clsx(scrolled ? "scale-75" : "scale-100")} />
+
+            <Cart />
           </div>
         </div>
       </nav>

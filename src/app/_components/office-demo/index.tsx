@@ -10,7 +10,7 @@ import officeDesk from "./assets/Office-Desk.jpg";
 export function OfficeDemo() {
   return (
     <div className="relative w-full">
-      <div className="relative min-h-[90vh] w-full py-24">
+      <div className="relative min-h-[90vh] w-full py-12 lg:py-24 px-6 lg:px-0">
         <div className="absolute inset-0 h-full -z-20">
           <Image
             src={officeDesk}

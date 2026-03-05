@@ -7,6 +7,7 @@ import verticalSwitch from "./assets/product-features-01.png";
 import glass from "./assets/product-features-03.png";
 import drill from "./assets/product-features-02.png";
 import child from "./assets/product-features-04.png";
+import colors from "./assets/product-features-05.png";
 
 const containerVariants = {
   hidden: {},
@@ -19,12 +20,12 @@ const containerVariants = {
 
 export function Showcase() {
   return (
-    <section className="bg-black text-white py-24 max-w-5xl w-full mx-auto">
+    <section className="bg-black text-white py-24 max-w-5xl w-full px-6 lg:px-0 mx-auto">
       <motion.div
         variants={containerVariants}
         initial="hidden"
         whileInView="show"
-        className="max-w-7xl mx-auto grid grid-cols-3 gap-8"
+        className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8"
       >
         {/* MAIN CARD */}
         <motion.div
@@ -37,7 +38,7 @@ export function Showcase() {
             y: 0,
           }}
           transition={{ duration: 0.5 }}
-          className="row-span-2 col-span-2 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 flex justify-between items-center gap-6 relative"
+          className="py-24 lg:py-0 row-span-2 col-span-1 lg:col-span-2 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 flex justify-between items-center gap-6 relative"
         >
           <Image
             src={verticalSwitch}
@@ -141,23 +142,16 @@ export function Showcase() {
             y: 0,
           }}
           transition={{ duration: 0.5 }}
-          className="col-span-2 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 p-6"
+          className="p-6 min-h-64 col-span-1 lg:col-span-2 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 flex relative"
         >
-          <h3 className="text-3xl font-bold mb-6 max-w-80">
+          <Image
+            src={colors}
+            alt="Feature"
+            className="absolute inset-0 bottom-0 h-full w-full object-cover rounded-2xl"
+          />
+          <h2 className="text-3xl font-bold mb-6 max-w-80 z-10">
             Rich Selection of Colors
-          </h3>
-
-          <div className="flex h-full gap-6">
-            {["#f5f5f5", "#c0c0c0", "#c7a14a", "#000000"].map((color, i) => (
-              <motion.div
-                key={i}
-                style={{ backgroundColor: color }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-full h-[calc(100%-92px)] rounded-xl border border-white/20"
-              />
-            ))}
-          </div>
+          </h2>
         </motion.div>
       </motion.div>
     </section>
