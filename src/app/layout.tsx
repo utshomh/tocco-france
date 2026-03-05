@@ -3,6 +3,7 @@ import { Dancing_Script, Montserrat, Open_Sans } from "next/font/google";
 
 import "@/styles/globals.css";
 import Navbar from "@/app/_components/navbar/navbar";
+import { ContactUs } from "./_components/contact-us";
 
 const dancingScript = Dancing_Script({
   variable: "--font-script",
@@ -36,6 +37,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <ContactUs />
       </body>
     </html>
   );

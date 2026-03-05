@@ -26,7 +26,7 @@ export function OfficeDemo() {
         <div className="relative z-10 flex flex-col justify-center items-center gap-6 text-center">
           <motion.h2
             className="text-5xl font-bold"
-            initial={{ y: -10, scale: 0.9 }}
+            initial={{ y: 50, scale: 0.9 }}
             whileInView={{ y: 0, scale: 1 }}
             transition={{ duration: 0.75 }}
           >
@@ -40,9 +40,9 @@ export function OfficeDemo() {
 
           <motion.p
             className="text-xl font-semibold"
-            initial={{ y: 50 }}
-            whileInView={{ y: 0 }}
-            transition={{ duration: 0.75 }}
+            initial={{ y: -50, scale: 0.9 }}
+            whileInView={{ y: 0, scale: 1 }}
+            transition={{ duration: 0.5 }}
           >
             Tocco France's premium switches & sockets, <br /> combining style
             and functionality for a marvelous environment.
